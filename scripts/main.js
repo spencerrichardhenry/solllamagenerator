@@ -124,7 +124,7 @@
             select = document.getElementById(group);
 
                   
-             images[i] = "/images/normal/" + group + "/" + encodeURIComponent(select.value) + ".png";
+             images[i] = "solllamagenerator/images/normal/" + group + "/" + encodeURIComponent(select.value) + ".png";
             var keys = Object.keys(data[group]);
             var index = keys.indexOf(select.value);
             var seed = seed + index.toString(36);
