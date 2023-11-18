@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Create your own Honey Badger or explore all the traits to discover the rarity of your badgers" />
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Solllamas Generator">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://honeybadgers.fun/thumb.jpg">
+    <meta property="og:url" content="https://honeybadgers.fun">
+    <meta name="twitter:card" content="summary_large_image">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Create your own Honey Badger or explore all the traits to discover the rarity of your badgers">
+    <meta property="og:site_name" content="Honey Badger's solllamas">
+    <meta name="twitter:image:alt" content="Honey Badgers">
+    <title>HoneyBadgers Playground</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900">
+    <main>
+        <div class="px-4 pt-6">
+            <div class="grid grid-cols-1 gap-6 mb-6 w-full xl:grid-cols-2">
+                <div class="order-last md:order-first">
+                    <!-- Select Card -->
+                    <div class="bg-gray-200 dark:bg-gray-800 dark:text-gray-100 shadow-sm shadow-gray-200 dark:shadow-gray-700  rounded-2xl p-4 ">
+                        <div class="flex justify-between items-center mb-4 px-2">
+                            <div>
+                                <h3 class="mb-2 text-xl font-bold text-gray-800 dark:text-gray-200">Honey Badger's solllamas</h3>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <a onclick="randomize()" href class="p-2 text-sm font-medium text-gray-800 rounded-lg hover:bg-emerald-200/90 dark:hover:bg-emerald-800/90 btn dark:bg-emerald-800/80 bg-emerald-200/0 dark:text-gray-200">Generate</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row flex-wrap mt-8">
+                            <div class="md:w-1/2 md:px-2">
+                                <label class="p-1 flex" for="background">Background <span class="ml-auto w-1/2 flex text-center" id="background_rarity"></span></label>
+                                <select onchange="" class="w-full rounded-lg text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 border-gray-100 dark:border-gray-700 dark:text-gray-200 mb-2" id="background">
+                                </select>
+                            </div>
+                            <div class="md:w-1/2 md:px-2">
+                                <label class="p-1 flex" for="body">Body<span class="ml-auto w-1/2 flex text-center" id="body_rarity"></span></label>
+                                <select onchange="" class="w-full rounded-lg text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 border-gray-100 dark:border-gray-700 dark:text-gray-200 mb-2" id="body">
+                                </select>
+                            </div>
+                            <div class="md:w-1/2 md:px-2">
+                                <label class="p-1 flex" for="neck">Neck<span class="ml-auto w-1/2 flex text-center" id="neck_rarity"></span></label>
+                                <select onchange="" class="w-full rounded-lg text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 border-gray-100 dark:border-gray-700 dark:text-gray-200 mb-2" id="neck">
+                                </select>
+                            </div>
+                            <div class="md:w-1/2 md:px-2">
+                                <label class="p-1 flex" for="head">Head<span class="ml-auto w-1/2 flex text-center" id="head_rarity"></span></label>
+                                <select onchange="" class="w-full disabled rounded-lg text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 border-gray-100 dark:border-gray-700 dark:text-gray-200 mb-2" id="head">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bg-gray-200 dark:bg-gray-800 dark:text-gray-100 shadow-sm shadow-gray-200 dark:shadow-gray-700  rounded-2xl p-4 ">
+
+                            <div class="md:w-1/2 md:px-2">
+                                <label class="p-1 flex" for="head">COLLECTION ADDRESS<span class="ml-auto w-1/2 flex text-center" id="head_rarity"></span></label>
+                                <p>GSkdHKU9kCm9PwfJs88Gi5SoD2mWhn6ei2ngbzzKMBv4</p>
+            
+                                </div>
+                                <div class="md:w-1/2 md:px-2">
+            
+                                    <label class="p-1 flex" for="head">NAME<span class="ml-auto w-1/2 flex text-center" id="head_rarity"></span></label>
+                                    <p>solllama</p>
+                                    <label class="p-1 flex" for="head">DESCRIPTION<span class="ml-auto w-1/2 flex text-center" id="head_rarity"></span></label>
+                                    <p>solllama is the future of finance</p>
+            
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+
+                <!-- Image card -->
+                <div>
+                    <div class="bg-gray-100 dark:bg-gray-800 dark:text-gray-100 shadow-sm shadow-gray-200 dark:shadow-gray-700  rounded-2xl m-0 p-0">
+                        <div class="relative ">
+                            <a download id="download" href="" class="absolute inset-0 z-10 bg-gray-700 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-60 duration-300">
+                                <h1 class="text-gray-100 text-3xl font-bold">Click to download HD image</h1>
+                            </a>
+                            <a class="relative">
+                                <!-- <div class="h-48 flex flex-wrap content-center"> -->
+                                <img id="badger" src="" width="%" class="rounded-2xl mb-0 pb-0 m-auto w-full" style="max-width:100%">
+                                <!-- </div> -->
+                            </a>
+                        </div>
+                    </div>
+                                    <!-- Image card -->
+                <div>
+                    <div class="bg-gray-100 dark:bg-gray-800 dark:text-gray-100 shadow-sm shadow-gray-200 dark:shadow-gray-700  rounded-2xl m-0 p-0">
+                        <div class="relative ">
+                            <a download id="download" href="" class="absolute inset-0 z-10 bg-gray-700 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-60 duration-300">
+                                <h1 class="text-gray-100 text-3xl font-bold">Click to download HD image</h1>
+                            </a>
+                            <a class="relative">
+                                <!-- <div class="h-48 flex flex-wrap content-center"> -->
+                                <img id="smolbadger" src="" width="%" class="rounded-2xl mb-0 pb-0 m-auto w-full" style="max-width:100%">
+                                <!-- </div> -->
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="px-4 pt-6">
+            <div class="bg-gray dark:bg-gray-800 dark:text-gray-100 shadow-sm shadow-gray-200 dark:shadow-gray-700  rounded-2xl p-4 flex w-full">
+                <a class="text-gray-700 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200 font-bold py-2 px-4 rounded" target="_blank" href="https://honeybadgers.btcmint.app">Mint</a>
+                <a target="_blank" class="py-2 px-2 rounded items-center" href="https://twitter.com/HoneyBadgersBtc">
+                    <svg class="fill-current w-6 h-6" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M20,3.88983016 C19.2639028,4.21102095 18.4730884,4.42705244 17.6430672,4.52459457 C18.490753,4.02588133 19.1406814,3.236446 19.4467961,2.29509038 C18.6544738,2.7567757 17.776198,3.09214289 16.84062,3.27347392 C16.0922437,2.48996306 15.0261199,2.00034811 13.8460378,2.00034811 C11.2377075,1.96607083 9.23234347,4.46894689 9.84952769,6.94833666 C6.43961181,6.78054727 3.41659396,5.17586285 1.39205739,2.73688641 C0.287157614,4.50660958 0.914466669,7.03741527 2.66218589,8.11778429 C1.98985362,8.09662548 1.35672817,7.91529444 0.803739727,7.61378135 C0.778104501,9.58260895 2.20010556,11.2448453 4.09517347,11.6157593 C3.51288763,11.7752968 2.84206331,11.8002642 2.24211286,11.6851603 C2.76451137,13.2860361 4.27979018,14.4518867 6.07511767,14.4842597 C4.45191241,15.7582319 2.17942504,16.422407 0,16.1532669 C8.76380048,21.4507991 18.451977,14.510285 17.951767,5.975666 C18.7537834,5.4069171 19.4500275,4.69746208 20,3.88983016 Z" id="Path" fill="#00ACED" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </a>
+                <a target="_blank" class="py-2 px-4 rounded items-center" href="https://discord.com/invite/HoneyBadgers">
+                    <svg class="fill-current w-6 h-6" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M7.26654477,3.00014147 L7.43784685,3.20189513 C6.1441646,3.5613403 5.14586456,4.00354776 4.42271182,4.3958925 L4.0358911,4.6157699 L4.0358911,4.6157699 L3.70926031,4.81892373 L3.49071219,4.96560275 L3.23311469,5.1524233 L3.05846053,5.29071352 L2.94763631,5.38679081 C7.28322587,3.15240047 12.5925213,3.13625179 16.7608721,5.38679081 L16.6470915,5.28945694 L16.4681323,5.1494471 L16.2046478,4.96043083 L15.981424,4.81212378 L15.6482387,4.60685589 L15.6482387,4.60685589 L15.2542144,4.38488632 L15.07941,4.29271604 L15.07941,4.29271604 L14.7000731,4.10461043 C14.1677441,3.85144216 13.5289039,3.59145985 12.7796552,3.35621281 L12.493504,3.26921626 L12.7334552,3.00035119 L12.9472222,3.00643986 L13.1087326,3.01792562 L13.4252309,3.05281733 L13.6813059,3.09158647 L13.969912,3.14574811 L14.2880237,3.21786174 C15.172973,3.43637589 16.3403758,3.87367947 17.5320523,4.74818385 L17.7512255,5.1679994 L17.9609821,5.60487959 L18.0842356,5.87596358 L18.2170546,6.18032425 L18.3574255,6.51659718 L18.5033346,6.88341794 L18.7281782,7.48794157 L18.8791239,7.92516252 L18.9541567,8.15352289 L18.9541567,8.15352289 L19.1020837,8.62889067 L19.2454813,9.12798413 L19.3823359,9.64943884 C19.4266399,9.82683234 19.4695178,10.0077253 19.510634,10.1918904 L19.6283621,10.7539743 C19.8519057,11.8968649 20,13.1493633 20,14.46235 L19.8758363,14.6350123 L19.7767721,14.7600769 L19.647312,14.9107695 L19.4865215,15.0822139 C18.7794518,15.8029935 17.2980179,16.9047857 14.7730408,16.9832221 L13.6419337,15.6386871 C14.924851,15.2833562 15.7544893,14.6865612 16.2299699,14.2402874 L16.3918676,14.0807561 L16.5217246,13.9399297 L16.6207024,13.8224018 L16.7439772,13.6555451 C14.1395866,15.3371052 10.6525947,15.9188772 7.84931404,15.3530442 C6.12624173,15.0197941 4.74363498,14.4946474 3.37621232,13.6555451 L3.45794018,13.7710779 L3.53876953,13.8729854 L3.64884809,14.000103 L3.78933697,14.1480205 L3.9613973,14.3123279 C4.43197999,14.7399084 5.20943032,15.2797984 6.37538896,15.6219092 L5.78615458,16.3385836 L5.22717309,17 C2.80740337,16.9248317 1.34593928,15.9098107 0.605978389,15.186542 L0.429156215,15.0052913 C0.402361753,14.9764558 0.376892266,14.9483742 0.35272829,14.9211479 L0.169975848,14.7019341 L0.0478918288,14.535585 L0,14.4621403 C0,12.7114913 0.263138113,11.0683772 0.61756904,9.64922911 L0.754424353,9.12777441 L0.897824555,8.62868095 L1.04575583,8.15331317 L1.12079131,7.9249528 L1.12079131,7.9249528 L1.27174331,7.48773185 L1.42219185,7.07764765 L1.64251548,6.51638746 L1.78289497,6.18011453 L1.97867526,5.735967 L2.24875683,5.16778967 L2.36599845,4.93762878 L2.46794769,4.74797412 C3.66794375,3.87357173 4.83557499,3.43627095 5.71856324,3.21773277 L6.03584847,3.145609 L6.32349202,3.09143556 L6.57853753,3.0526538 L6.7980286,3.02670505 L7.05413355,3.00624675 L7.21361136,3.00014147 L7.26654477,3.00014147 Z M5.05565714,11.0505739 C5.05565714,12.0757007 5.84394615,12.8992834 6.80375111,12.8992834 C7.78045103,12.8992834 8.55184508,12.0757007 8.55184508,11.0505739 C8.49923545,8.60289517 5.12580331,8.59534514 5.05565714,11.0505739 Z M14.8070446,11.0505739 C14.719148,8.59912015 11.3878463,8.60016877 11.3108566,11.0505739 C11.3108566,12.0757007 12.0991456,12.8992834 13.0589506,12.8992834 C14.0358644,12.8992834 14.8070446,12.0757007 14.8070446,11.0505739 Z" id="Shape" fill="#6665D2" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/md_codes" target="_blank" class="bg-transparent  text-gray-600 dark:text-gray-400 font-bold py-2 px-6 rounded self-right ml-auto p-10 absolute right-4">
+                    By the Bitcoin Honey Badgers den. Credit to md.
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://unpkg.com/merge-images"></script>
+    <!-- <script src="scripts/names.js"></script> -->
+    <script src="scripts/clipboard.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+
+</html>
